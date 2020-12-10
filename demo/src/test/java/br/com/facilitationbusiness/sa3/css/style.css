@@ -1,0 +1,217 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #F7EDE2;
+}
+
+/*FONTE*/
+@font-face{
+    font-family: lovelo;
+    src: url(../src/Lovelo/TTF/Lovelo-LineBold.ttf);
+}
+
+/*NAVABAR*/
+.topnav {
+    overflow: hidden;
+    background-color: #ff8a8a;
+    padding: 10px 0;
+}
+/*div do lado direito*/
+.topnav-right {
+    float: right;
+    margin-right: 20px;
+}
+/*botão modal para fazer login*/
+#login{
+    color: #F7EDE2;
+    background-color: #F8BD9F;
+    padding: 5px;
+    margin: 10px;
+    width: 100px;
+    margin-top: 10px;
+    font-size: 15px;
+    display: flexbox;
+}
+#login:hover{
+    background-color: #F5CAC3;
+    text-decoration: none;
+}
+/*imagem perfil*/
+.img-perfil{
+    float: right;
+    border-radius: 50%;
+    border: 2px solid #F8BD9F;
+    display: none;
+}
+.img-perfil:hover {
+    opacity: 0.7;
+}
+/*titulo principal / BRAND*/
+.topnav a.active {
+    margin-left: 20%;
+    font-family: lovelo;
+    color: #F8BD9F;
+    font-size: 30px;
+    display: flexbox;
+}
+.topnav a.active:hover{
+    color: #F5CAC3;
+    text-decoration: none;
+}
+
+/*BOTÃO entrar/login*/
+#Entrar{
+    color: #F7EDE2;
+    background-color: #F8BD9F;
+    border: 2px solid #F8BD9F;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    font-size: 15px;
+}
+#Entrar:hover{
+    background-color: #F7EDE2;
+    color: #F8BD9F;
+    border: 2px solid #F8BD9F;
+}
+/*ALERTs*/
+.msg{
+    display: none;
+    margin-top: 5px;
+}
+/*botão para recuperar senha*/
+#recSenha{
+    font-size: 12px;
+    color: rgb(143, 141, 141);
+}
+
+
+/*FOOTER*/
+.footer {
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #F7EDE2;
+    color: rgb(87, 87, 87);
+}
+
+
+/*secao 1 do index*/
+#secao1{
+    width: 100%;
+    height: 720px;
+    display: inline-block;
+    background-image: url(../src/Componente1.png); 
+    background-size: cover;
+}
+
+
+/*secao 2 do index*/
+#secao2{
+    width: 100%;
+    height: 720px;
+    display: inline-block;
+    background-image: url(../src/Componente2.png);
+    background-size: cover;
+}
+
+
+/*secao 3 do index*/
+#secao3{
+    width: 100%;
+    height: 720px;
+    display: inline-block;
+    background-image: url(../src/Componente3.png); 
+    background-size: cover;
+}
+
+
+/*secao 4 do index*/
+#secao4{
+    width: 100%;
+    height: 720px;
+    display: inline-block;
+    background-image: url(../src/Componente4.png); 
+    background-size: cover;
+}
+
+
+/*titulos das seções*/
+#h2{
+    margin-top: 80px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    color:#84A59D;
+}
+
+
+/*navbar fixo - corpo*/
+#nav2{
+    display: block;
+    position: fixed;
+    padding: 0%;
+    width: 75%;
+    height: 45px;
+    margin-left: 13%;
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}
+/*div dos botões de navegação*/
+#div8{
+    width: max-content;
+    height: max-content;
+    float: left;
+    margin-top: 12px;
+}
+/*links para navegação*/
+/*HOME*/
+#home-nav2{
+    padding: 4px 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #848484;
+    font-size: 18px;
+    border: 2px solid #95C7FF;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 100;
+}
+/*HOVER home*/
+#home-nav2:hover{
+    opacity: 0.7;
+}
+/*SOBRE / NOVIDADE / FUNCIONÁRIOS*/
+.linknavbar{
+    padding: 0px 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: #848484;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*HOVER linknavbar*/
+.linknavbar:hover{
+    text-decoration: none;
+    color: #95C7FF;
+}
+/*form-pesquisa*/
+#form-pesquisa{
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+}
+/*input de pesquisa*/
+#pesquisa{
+    padding-left: 10px;
+    font-size: 15px;
+    border: 1px solid #848484;
+    border-radius: 50px;
+}
