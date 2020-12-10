@@ -141,17 +141,35 @@ body{
     width: 100%;
     height: 720px;
     display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     background-image: url(../src/Componente2.png);
     background-size: cover;
 }
 /*Texto sobre a empresa*/
 #div-sobre{
+    float: left;
     text-align: left;
-    margin-left: 50px;
-    padding: 5px;
-    width: 10%;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 10px;
+    width: 15%;
     height: auto;
-    background-color: lightcoral;
+}
+#div-sobre h3{
+    font-size: 30px;
+}
+#div-sobre p{
+    font-size: 20px;
+}
+#div-sobre-right{
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    width: 25%;
+    height: 20%;
+    text-align: right;
+    color: #c51390;
 }
 
 
@@ -200,7 +218,7 @@ ul li{
 
 /*titulos das seções*/
 #h2{
-    margin-top: 80px;
+    margin-top: 30px;
     padding-top: 25px;
     padding-bottom: 5px;
     text-align: center;
