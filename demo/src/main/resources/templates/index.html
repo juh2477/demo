@@ -69,7 +69,7 @@
                     <!--BOTÕES DO MODAL LOGIN-->
                     <div class="modal-footer">
                         <!--BOTÃO ABRIR MODAL CADASTRO-->
-                        <button type="button" class="btn btn-white" id="btn-cadastro" data-toggle="modal" data-target="ModalCadastro" data-whatever="@getbootstrap">Cadastre-se</button>
+                        <button type="button" class="btn btn-white" id="btn-cadastro" data-toggle="modal-cadastro" data-target="#ModalCadastro" data-whatever="@getbootstrap">Cadastre-se</button>
                             <!--MODAL CADASTRO-->
                             <div class="modal fade" id="ModalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastroLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -126,13 +126,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="../static/src/pato.png" alt="Primeiro Slide">
+                    <img class="d-block w-100" src="../static/src/slide1.png" alt="Primeiro Slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../static/src/pato.png" alt="Segundo Slide">
+                    <img class="d-block w-100" src="../static/src/slide2.png" alt="Segundo Slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="../static/src/pato.png" alt="Terceiro Slide">
+                    <img class="d-block w-100" src="../static/src/slide3.png" alt="Terceiro Slide">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -220,9 +220,11 @@
         <!--SCRIPTS-->
         <script type="text/javascript">
         /*BOTÃO ENVIAR*/
+        let email = document.getElementById('Email').value
+        let senha = document.getElementById('Senha').value
+        let nome = document.getElementById('Nome').value
+
         const btnEntrar = function(){
-            let email = document.getElementById('Email').value
-            let senha = document.getElementById('Senha').value
 
             if(email == "" || senha == ""){
                 //Mansagem de erro no modal
@@ -240,10 +242,7 @@
         }
         /*BOTÃO CADASTRAR*/
         const btnCadastrar = function(){
-            let nome = document.getElementById('Nome').value
-            let email = document.getElementById('Email').value
-            let senha = document.getElementById('Senha').value
-
+            
             if(email == "" || senha == "" || nome == ""){
                 //Mansagem de erro no modal
                 $('#msgErro').slideDown(400).delay(2000).slideUp(400)
