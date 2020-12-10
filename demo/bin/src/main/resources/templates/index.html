@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilitation Bussnies</title>
+
+    <!--CSS-->
+    <link rel="Stylesheet" href="../static/css/style.css">
+    <!--BOOTSTRAP-->
+    <link rel="Stylesheet" href="../static/src/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <!--ICONS-->
+    <link rel="icon" href="../static/src/font-awesome-4.7.0/css/font-awesome.css">
+    <!--SEMANTIC-->
+    <link rel="stylesheet" href="../static/src/Semantic-UI-master/Semantic-UI-master/dist/semantic.min.css">
+</head>
+<body>
+    <!--MENU NAV-->
+    <div class="topnav">
+        <!--botão para ir para "Index/Home"-->
+        <a class="active" href="index.html" data-toggle="tooltip" data-placement="left" title="Home">Facilitation business</a>
+        <div class="topnav-right">
+            <!--imagem perfil-->
+            <a target="blank" href="../src/pato.png" data-toggle="tooltip" data-placement="left" title="Perfil">
+                <img class="img-perfil" id="imagemPerfil" src="../static/src/pato.png" alt="tiktok" style="width:50px">
+            </a>
+            <!--MODAL-->
+            <!--botão para efetuar o login-->
+            <button type="button" class="btn" id="login" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"  data-toggle="tooltip" data-placement="left" title="Login">Login</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <!--Titulo/cabeçalho-->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Faça seu login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!--corpo do modal-->
+                        <div class="modal-body">
+                        <form>
+                        <!--INPUTS-->
+                        <!--email-->
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Seu email">
+                        </div>
+                        <!--senha-->
+                        <div class="form-group">
+                            <label for="Senha">Senha</label>
+                            <input type="password" class="form-control" id="Senha" aria-describedby="senhaHelp" placeholder="Sua senha">
+                            <small id="emailHelp" class="form-text text-muted"><a id="recSenha" href="#">Esqueceu a senha? Clique aqui</a></small>
+                        </div>
+                        <!--ALERTS-->
+                        <!--erro-->
+                        <div class="alert alert-danger msg" role="alert" id="msgErro">
+                            Preencha todos os campos corretamene!
+                        </div>
+                        </form>
+                        </div>
+                        <!--BOTÕES MODAL-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-light" id="Entrar" onclick="btnEntrar()">Entrar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <!--MenuNav 2 - fixo-->
+        <nav id="nav2">
+            <div id="div8">
+                <a id="home-nav2" href="index.html">Home</a>
+                <a class="linknavbar" id="sobre-nav2" href="#secao2">Sobre</a>
+                <a class="linknavbar" id="novidades-nav2" href="#secao3">Novidades</a>
+                <a class="linknavbar" id="funcionarios-nav2" href="#secao4">Funcionários</a>
+            </div>
+            <!--Barra de pesquisa-->
+            <form id="form-pesquisa">
+                <input id="pesquisa" placeholder="Buscar" aria-label="Pesquisa">
+                <a href="#" data-toggle="tooltip" data-placement="left" title="pesquisar">
+                    <!--img lupa para pesquisa-->
+                    <img id="btn-pesquisar" src="../static/src/search.svg" alt="pesquisa" style="height: 20px; width: 20px;">
+                </a>
+            </form>
+        </nav>
+
+        <!--Seção1-->
+        <div class="secao1" id="secao1">
+            
+        </div>
+
+        <!--Seção 2-->
+        <div class="secao2" id="secao2">
+            <h2 id="h2">Sobre</h2>
+
+        </div>
+
+        <!--Seção 3-->
+        <div class="secao3" id="secao3">
+            <h2 id="h2">Novidades</h2>
+
+        </div>
+
+        <!--Seção 4-->
+        <div class="secao4" id="secao4">
+            <h2 id="h2">Funcionários</h2>
+
+        </div>
+        
+        <!--FOOTER-->
+        <div class="footer">
+            © Created by EquipeDev ✌🏻
+            <a href="https://github.com/juh2477/ADA_pol-tica-de-privacidade.git">Termo de Privacidade</a>
+        </div>
+
+        <!--SCRIPTS-->
+        <script type="text/javascript">
+        /*BOTÃO ENVIAR*/
+        const btnEntrar = function(){
+            let email = document.getElementById('Email').value
+            let senha = document.getElementById('Senha').value
+
+            if(email == "" || senha == ""){
+                //Mansagem de erro no modal
+                $('#msgErro').slideDown(400).delay(2000).slideUp(400)
+            }else{
+                //Troca do botão pela imagem de perfil
+                var x = document.getElementById("imagemPerfil");
+                var y = document.getElementById("login")
+                if (window.getComputedStyle(x).display === "none") {
+                 x.style.display = "block";
+                 y.style.display = "none"
+                }
+                $('#exampleModal').modal('hide');
+            }
+        }
+        </script>
+
+        <script src="../static/js/jquery-3.3.1.min.js"></script>
+        <script src="../static/src/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
