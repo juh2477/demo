@@ -80,6 +80,21 @@ body{
 #imagemPerfil:hover {
     opacity: 0.7;
 }
+<<<<<<< HEAD
+/*titulo principal / BRAND*/
+.topnav a.active {
+    margin-left: 20%;
+    font-family: lovelo;
+    color: #F8BD9b;
+    font-size: 30px;
+    display: flexbox;
+}
+.topnav a.active:hover{
+    color: #F5CAC3;
+    text-decoration: none;
+}
+=======
+>>>>>>> 00a2162a9e51d697ffe68488e9df29595961cc3f
 
 /*BOTÃO entrar/login*/
 #Entrar{
