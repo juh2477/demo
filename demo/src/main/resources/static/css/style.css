@@ -135,15 +135,6 @@ body{
     background-image: url(../src/Componente1.png); 
     background-size: cover;
 }
-/*Slider*/
-.carousel{
-    width: 100%;
-}
-.carousel img{
-    margin-top: 50px;
-    height: 250px;
-}
-
 
 /*secao 2 do index*/
 #secao2{
