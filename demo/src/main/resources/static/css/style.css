@@ -12,7 +12,7 @@ body{
 /*navbar fixo - corpo*/
 #nav2{
     display: block;
-    position: fixed;
+    position: absolute;
     padding: 0%;
     width: 100%;
     height: 45px;
@@ -44,6 +44,7 @@ body{
     padding: 0px 10px;
     margin-top: 15px;
     margin-left: 15px;
+    margin-right: 10px;
     color: #848484;
     font-size: 18px;
     text-decoration: none;
@@ -72,6 +73,7 @@ body{
 #imagemPerfil{
     float: right;
     border-radius: 50%;
+    margin: 20px;
     border: 2px solid #ff8a50;
     display: none;
 }
@@ -133,6 +135,15 @@ body{
     display: inline-block;
     background-image: url(../src/Componente1.png); 
     background-size: cover;
+}
+/*Slider*/
+.carousel{
+    width: 80%;
+    margin-left: 150px;
+}
+.carousel img{
+    margin-top: 80px;
+    height: 250px;
 }
 
 
@@ -226,5 +237,3 @@ ul li{
     font-weight: 200;
     color:#84A59D;
 }
-
-
