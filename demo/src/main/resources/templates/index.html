@@ -30,7 +30,7 @@
             <a class="linknavbar" id="novidades-nav2" href="#secao3">Novidades</a>
             <a class="linknavbar" id="funcionarios-nav2" href="#secao4">Funcionários</a>
             <!--imagem perfil-->
-            <a target="blank" href="../static/src/pato.png" data-toggle="tooltip" data-placement="left" title="Perfil">
+            <a target="blank" href="../static/src/pato.png">
                 <img class="img-perfil" id="imagemPerfil" src="../static/src/pato.png" alt="tiktok" style="width:50px">
             </a>
             <!--MODAL-->
@@ -70,49 +70,8 @@
                     <div class="modal-footer">
                         <!--BOTÃO ABRIR MODAL CADASTRO-->
                         <button type="button" class="btn btn-white" id="btn-cadastro" data-toggle="modal-cadastro" data-target="#ModalCadastro" data-whatever="@getbootstrap">Cadastre-se</button>
-                            <!--MODAL CADASTRO-->
-                            <div class="modal fade" id="ModalCadastro" tabindex="-1" role="dialog" aria-labelledby="modalCadastroLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                <!--CABEÇA MODAL CADASTRO-->
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modalCadastroLabel">Faça seu login</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <form>
-                                        <!--NOME MODAL CADASTRO-->
-                                        <div class="form-group">
-                                            <label for="Name">Nome</label>
-                                            <input type="name" class="form-control" id="Nome" aria-describedby="nomeHelp" placeholder="Insira seu nome">
-                                        </div>
-                                        <!--EMAIL MODAL CADASTRO-->
-                                        <div class="form-group">
-                                            <label for="Email">Email</label>
-                                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Informe seu email">
-                                        </div>
-                                        <!--SENHA MODAL CADASTRO-->
-                                        <div class="form-group">
-                                            <label for="Senha">Senha</label>
-                                            <input type="password" class="form-control" id="Senha" aria-describedby="senhaHelp" placeholder="Crie uma senha">
-                                        </div>
-                                        <!--ALERT MODAL CADASTRO-->
-                                        <div class="alert alert-danger msg" role="alert" id="msgErro">
-                                            Preencha todos os campos corretamene!
-                                        </div>
-                                    </form>
-                                </div>
-                                <!--BOTÃO MODAL CADASTRO-->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-white" id="btn-cadastro" data-dismiss="modal" onclick="btnCadastrar()">Cadastrar</button>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                            <!--BOTÃO ENTRAR MODAL LOGIN-->
-                        <button type="button" class="btn btn-light" id="Entrar" data-dismiss="modal" onclick="btnEntrar()">Entrar</button>
+                        <!--BOTÃO ENTRAR MODAL LOGIN-->
+                        <button type="button" class="btn btn-light" id="Entrar" onclick="btnEntrar()">Entrar</button>
                     </div>
                     </div>
                 </div>
@@ -220,11 +179,9 @@
         <!--SCRIPTS-->
         <script type="text/javascript">
         /*BOTÃO ENVIAR*/
-        let email = document.getElementById('Email').value
-        let senha = document.getElementById('Senha').value
-        let nome = document.getElementById('Nome').value
-
         const btnEntrar = function(){
+            let email = document.getElementById('Email').value
+            let senha = document.getElementById('Senha').value
 
             if(email == "" || senha == ""){
                 //Mansagem de erro no modal
@@ -238,23 +195,6 @@
                  y.style.display = "none"
                 }
                 $('#exampleModal').modal('hide');
-            }
-        }
-        /*BOTÃO CADASTRAR*/
-        const btnCadastrar = function(){
-            
-            if(email == "" || senha == "" || nome == ""){
-                //Mansagem de erro no modal
-                $('#msgErro').slideDown(400).delay(2000).slideUp(400)
-            }else{
-                //Troca do botão pela imagem de perfil
-                var x = document.getElementById("imagemPerfil");
-                var y = document.getElementById("login")
-                if (window.getComputedStyle(x).display === "none") {
-                 x.style.display = "block";
-                 y.style.display = "none"
-                }
-                $('#ModalCadastro').modal('hide');
             }
         }
         </script>
