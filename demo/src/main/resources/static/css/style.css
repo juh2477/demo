@@ -9,21 +9,55 @@ body{
     src: url(../src/Lovelo/TTF/Lovelo-LineBold.ttf);
 }
 
-/*NAVABAR*/
-.topnav {
-    overflow: hidden;
-    background-color: #ff8a8a;
-    padding: 10px 0;
+/*navbar fixo - corpo*/
+#nav2{
+    display: block;
+    position: absolute;
+    padding: 0%;
+    width: 100%;
+    height: 45px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}
+/*titulo principal / BRAND*/
+#brand {
+    float: left;
+    margin-left: 25px;
+    margin-top: 12px;
+    font-family: lovelo;
+    color: #ff8a50;
+    font-size: 30px;
+    display: flexbox;
+}
+#brand:hover{
+    color: #ffbbb0;
+    text-decoration: none;
 }
 /*div do lado direito*/
-.topnav-right {
+#divRight {
     float: right;
     margin-right: 20px;
+}
+/*links para navegação*/
+/*SOBRE / NOVIDADE / FUNCIONÁRIOS*/
+.linknavbar{
+    padding: 0px 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #848484;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*HOVER linknavbar*/
+.linknavbar:hover{
+    text-decoration: none;
+    color: #95C7FF;
 }
 /*botão modal para fazer login*/
 #login{
     color: #F7EDE2;
-    background-color: #F8BD9F;
+    background-color: #ff8a50;
     padding: 5px;
     margin: 10px;
     width: 100px;
@@ -32,24 +66,26 @@ body{
     display: flexbox;
 }
 #login:hover{
-    background-color: #F5CAC3;
+    background-color: #ffbbb0;
     text-decoration: none;
 }
 /*imagem perfil*/
-.img-perfil{
+#imagemPerfil{
     float: right;
     border-radius: 50%;
-    border: 2px solid #F8BD9F;
+    margin: 20px;
+    border: 2px solid #ff8a50;
     display: none;
 }
-.img-perfil:hover {
+#imagemPerfil:hover {
     opacity: 0.7;
 }
+<<<<<<< HEAD
 /*titulo principal / BRAND*/
 .topnav a.active {
     margin-left: 20%;
     font-family: lovelo;
-    color: #F8BD9F;
+    color: #F8BD9b;
     font-size: 30px;
     display: flexbox;
 }
@@ -57,12 +93,14 @@ body{
     color: #F5CAC3;
     text-decoration: none;
 }
+=======
+>>>>>>> 00a2162a9e51d697ffe68488e9df29595961cc3f
 
 /*BOTÃO entrar/login*/
 #Entrar{
     color: #F7EDE2;
-    background-color: #F8BD9F;
-    border: 2px solid #F8BD9F;
+    background-color: #ff8a50;
+    border: 2px solid #ff8a50;
     padding: 5px;
     margin: 5px;
     width: 100px;
@@ -70,8 +108,12 @@ body{
 }
 #Entrar:hover{
     background-color: #F7EDE2;
-    color: #F8BD9F;
-    border: 2px solid #F8BD9F;
+    color: #ff8a50;
+    border: 2px solid #ff8a50;
+}
+/*botão cadastro*/
+#btn-cadastro{
+    color: #ff8a50;
 }
 /*ALERTs*/
 .msg{
@@ -88,14 +130,16 @@ body{
 /*FOOTER*/
 .footer {
     position: static;
-    margin-top: 50px;
     margin-bottom: 0px;
+    background-color: #daa388;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    background-color: #F7EDE2;
-    color: rgb(87, 87, 87);
+    height: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    text-align: right;
+    color: #ffffff;
 }
 
 
@@ -107,6 +151,15 @@ body{
     background-image: url(../src/Componente1.png); 
     background-size: cover;
 }
+/*Slider*/
+.carousel{
+    width: 80%;
+    margin-left: 150px;
+}
+.carousel img{
+    margin-top: 80px;
+    height: 250px;
+}
 
 
 /*secao 2 do index*/
@@ -114,8 +167,35 @@ body{
     width: 100%;
     height: 720px;
     display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     background-image: url(../src/Componente2.png);
     background-size: cover;
+}
+/*Texto sobre a empresa*/
+#div-sobre{
+    float: left;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 10px;
+    width: 15%;
+    height: auto;
+}
+#div-sobre h3{
+    font-size: 30px;
+}
+#div-sobre p{
+    font-size: 20px;
+}
+#div-sobre-right{
+    float: right;
+    margin-right: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    width: 25%;
+    height: 20%;
+    text-align: right;
+    color: #c51390;
 }
 
 
@@ -127,90 +207,48 @@ body{
     background-image: url(../src/Componente3.png); 
     background-size: cover;
 }
-
+/*cards de novidades*/
+#cards-novidades{
+    margin: 15%;
+    margin-top: 0;
+    position: relative;
+    object-position: center;
+    display: flexbox;
+}
 
 /*secao 4 do index*/
 #secao4{
     width: 100%;
-    height: 720px;
+    height: 560px;
     display: inline-block;
     background-image: url(../src/Componente4.png); 
     background-size: cover;
 }
-
+/*Links funcionário*/
+#div-links{
+    text-align: center;
+    margin-left: 35%;
+    width: 30%;
+}
+ul li{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+#links{
+    color: #ff8a50;
+}
 
 /*titulos das seções*/
 #h2{
-    margin-top: 80px;
+    margin-top: 30px;
     padding-top: 25px;
     padding-bottom: 5px;
     text-align: center;
     font-size: 50px;
     font-weight: 200;
     color:#84A59D;
-}
-
-
-/*navbar fixo - corpo*/
-#nav2{
-    display: block;
-    position: fixed;
-    padding: 0%;
-    width: 75%;
-    height: 45px;
-    margin-left: 13%;
-    background-color: #ffffff;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-}
-/*div dos botões de navegação*/
-#div8{
-    width: max-content;
-    height: max-content;
-    float: left;
-    margin-top: 12px;
-}
-/*links para navegação*/
-/*HOME*/
-#home-nav2{
-    padding: 4px 30px;
-    margin-top: 10px;
-    margin-left: 15px;
-    color: #848484;
-    font-size: 18px;
-    border: 2px solid #95C7FF;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 100;
-}
-/*HOVER home*/
-#home-nav2:hover{
-    opacity: 0.7;
-}
-/*SOBRE / NOVIDADE / FUNCIONÁRIOS*/
-.linknavbar{
-    padding: 0px 10px;
-    margin-top: 10px;
-    margin-left: 15px;
-    color: #848484;
-    font-size: 18px;
-    text-decoration: none;
-}
-/*HOVER linknavbar*/
-.linknavbar:hover{
-    text-decoration: none;
-    color: #95C7FF;
-}
-/*form-pesquisa*/
-#form-pesquisa{
-    float: right;
-    margin-top: 12px;
-    margin-right: 15px;
-}
-/*input de pesquisa*/
-#pesquisa{
-    padding-left: 10px;
-    font-size: 15px;
-    border: 1px solid #848484;
-    border-radius: 50px;
 }
