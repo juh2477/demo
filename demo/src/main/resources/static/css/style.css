@@ -16,7 +16,6 @@ body{
     padding: 0%;
     width: 100%;
     height: 45px;
-    background-color: #ffffff;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: 200;
 }
@@ -26,12 +25,12 @@ body{
     margin-left: 25px;
     margin-top: 12px;
     font-family: lovelo;
-    color: #F8BD9F;
+    color: #ff8a50;
     font-size: 30px;
     display: flexbox;
 }
 #brand:hover{
-    color: #F5CAC3;
+    color: #ffbbb0;
     text-decoration: none;
 }
 /*div do lado direito*/
@@ -57,7 +56,7 @@ body{
 /*botão modal para fazer login*/
 #login{
     color: #F7EDE2;
-    background-color: #F8BD9F;
+    background-color: #ff8a50;
     padding: 5px;
     margin: 10px;
     width: 100px;
@@ -66,14 +65,14 @@ body{
     display: flexbox;
 }
 #login:hover{
-    background-color: #F5CAC3;
+    background-color: #ffbbb0;
     text-decoration: none;
 }
 /*imagem perfil*/
 #imagemPerfil{
     float: right;
     border-radius: 50%;
-    border: 2px solid #F8BD9F;
+    border: 2px solid #ff8a50;
     display: none;
 }
 #imagemPerfil:hover {
@@ -83,8 +82,8 @@ body{
 /*BOTÃO entrar/login*/
 #Entrar{
     color: #F7EDE2;
-    background-color: #F8BD9F;
-    border: 2px solid #F8BD9F;
+    background-color: #ff8a50;
+    border: 2px solid #ff8a50;
     padding: 5px;
     margin: 5px;
     width: 100px;
@@ -92,12 +91,12 @@ body{
 }
 #Entrar:hover{
     background-color: #F7EDE2;
-    color: #F8BD9F;
-    border: 2px solid #F8BD9F;
+    color: #ff8a50;
+    border: 2px solid #ff8a50;
 }
 /*botão cadastro*/
 #btn-cadastro{
-    color: #F8BD9F;
+    color: #ff8a50;
 }
 /*ALERTs*/
 .msg{
@@ -114,14 +113,16 @@ body{
 /*FOOTER*/
 .footer {
     position: static;
-    margin-top: 50px;
     margin-bottom: 0px;
+    background-color: #daa388;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    background-color: #F7EDE2;
-    color: rgb(87, 87, 87);
+    height: 30px;
+    padding: 5px;
+    padding-right: 30px;
+    text-align: right;
+    color: #ffffff;
 }
 
 
@@ -158,12 +159,28 @@ body{
 /*secao 4 do index*/
 #secao4{
     width: 100%;
-    height: 720px;
+    height: 560px;
     display: inline-block;
     background-image: url(../src/Componente4.png); 
     background-size: cover;
 }
-
+/*Links funcionário*/
+#div-links{
+    text-align: center;
+    margin-left: 35%;
+    width: 30%;
+}
+ul li{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+#links{
+    color: #ff8a50;
+}
 
 /*titulos das seções*/
 #h2{
