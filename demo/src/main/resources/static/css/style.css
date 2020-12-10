@@ -144,6 +144,15 @@ body{
     background-image: url(../src/Componente2.png);
     background-size: cover;
 }
+/*Texto sobre a empresa*/
+#div-sobre{
+    text-align: left;
+    margin-left: 50px;
+    padding: 5px;
+    width: 10%;
+    height: auto;
+    background-color: lightcoral;
+}
 
 
 /*secao 3 do index*/
@@ -154,7 +163,14 @@ body{
     background-image: url(../src/Componente3.png); 
     background-size: cover;
 }
-
+/*cards de novidades*/
+#cards-novidades{
+    margin: 15%;
+    margin-top: 0;
+    position: relative;
+    object-position: center;
+    display: flexbox;
+}
 
 /*secao 4 do index*/
 #secao4{
